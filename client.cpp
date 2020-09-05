@@ -22,12 +22,12 @@ int main(int argc, char *argv[]){
     int nbytes = chan.cread (buf, MAX_MESSAGE);
 	double reply = *(double *) buf;
 	
-	filemsg fm (0,0);
-	char fname[] = "teslkansdlkjflasjdf.dat";
+	// filemsg fm (0,0);
+	// char fname[] = "teslkansdlkjflasjdf.dat";
 	
-	char buf [sizeof (filemsg) + fname.size()+1];
-	memcpy (buf, &fm, sizeof (filemsg));
-	strcpy (buf + sizeof (filemsg), fname.c_str());
+	// char buf [sizeof (filemsg) + fname.size()+1];
+	// memcpy (buf, &fm, sizeof (filemsg));
+	// strcpy (buf + sizeof (filemsg), fname.c_str());
 	
 	
 	cout << reply << endl;
